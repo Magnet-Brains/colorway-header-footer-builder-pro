@@ -1,5 +1,7 @@
 <?php
+
 defined('ABSPATH') || exit;
+
 /**
  * Plugin Name: Colorway Header Footer Builder Pro
  * Description:The advanced addons that allows you to create different layouts for header and footer with the help of Elementor.
@@ -15,98 +17,43 @@ defined('ABSPATH') || exit;
  */
 final class ColorwayHF {
 
-    /**
-     * Plugin Version
-     *
-     */
     const VERSION = '1.0.0';
 
-    /**
-     * Minimum Elementor Version
-     *
-     */
-    const MINIMUM_ELEMENTOR_VERSION = '2.4.0';
-
-    /**
-     * Minimum PHP Version
-     *
-     */
-    const MINIMUM_PHP_VERSION = '5.6';
-
-    /**
-     * Plugin file
-     *
-     */
     static function plugin_file() {
         return __FILE__;
     }
 
-    /**
-     * Plugin url
-     *
-     */
     static function plugin_url() {
         return trailingslashit(plugin_dir_url(__FILE__));
     }
 
-    /**
-     * Plugin directory.
-     *
-     */
     static function plugin_dir() {
         return trailingslashit(plugin_dir_path(__FILE__));
     }
 
-    /**
-     * Plugin's module directory.
-     *
-     */
     static function module_dir() {
         return self::plugin_dir() . 'modules/';
     }
 
-    /**
-     * Plugin's module url.
-     *
-     */
     static function module_url() {
         return self::plugin_url() . 'modules/';
     }
 
-    /**
-     * Plugin's lib directory.
-     *
-     */
     static function lib_dir() {
         return self::plugin_dir() . 'libs/';
     }
 
-    /**
-     * Plugin's lib url.
-     *
-     */
     static function lib_url() {
         return self::plugin_url() . 'libs/';
     }
 
-    /**
-     * Constructor
-     *
-     */
     public function __construct() {
         // Init Plugin
         add_action('plugins_loaded', array($this, 'init'), 100);
     }
 
-    /**
-     * Initialize the plugin
-     *
-     * Checks for basic plugin requirements, if one check fail don't continue,
-     * if all check have passed include the plugin class.
-     *
-     * Fired by `plugins_loaded` action hook.
-     *
-     */
+    /* Initialize the plugin */
+
     public function init() {
         // Load the main static helper class.
         require_once self::plugin_dir() . 'helpers/utils.php';
@@ -117,17 +64,6 @@ final class ColorwayHF {
             add_action('admin_notices', array($this, 'install_elementor_notice'));
             return;
         }
-        // Check for required Elementor version.
-        if (!version_compare(ELEMENTOR_VERSION, self::MINIMUM_ELEMENTOR_VERSION, '>=')) {
-            add_action('admin_notices', array($this, 'failed_elementor_version'));
-            return;
-        }
-        // Check for required PHP version.
-        if (version_compare(PHP_VERSION, self::MINIMUM_PHP_VERSION, '<')) {
-            add_action('admin_notices', array($this, 'failed_php_version'));
-            return;
-        }
-        // Once we get here, We have passed all validation checks so we can safely include our plugin.
         // Register ColorwayHF widget category
         add_action('elementor/init', [$this, 'elementor_widget_category']);
 
@@ -159,33 +95,6 @@ final class ColorwayHF {
             $btn['label'] = esc_html__('Install Elementor Plugin', 'colorway-hf');
             $btn['url'] = wp_nonce_url(self_admin_url('update.php?action=install-plugin&plugin=elementor'), 'install-plugin_elementor');
         }
-
-        \ColorwayHF\Notice::push(
-                [
-                    'id' => 'unsupported-elementor-version',
-                    'type' => 'error',
-                    'dismissible' => true,
-                    'btn' => $btn,
-                    'message' => sprintf(esc_html__('Oops! Colorway Header Footer Plugin requires Elementor plugin to be activated.', 'colorway-hf'), self::MINIMUM_ELEMENTOR_VERSION),
-                ]
-        );
-    }
-
-    /**
-     * Admin notice
-     *
-     * Warning when the site doesn't have a minimum required PHP version.
-     *
-     */
-    public function admin_notice_minimum_php_version() {
-        \ColorwayHF\Notice::push(
-                [
-                    'id' => 'unsupported-php-version',
-                    'type' => 'error',
-                    'dismissible' => true,
-                    'message' => sprintf(esc_html__('ColorwayHF requires PHP version %1$s+, which is currently NOT RUNNING on this server.', 'colorway-hf'), self::MINIMUM_PHP_VERSION),
-                ]
-        );
     }
 
     /**
@@ -210,13 +119,11 @@ final class ColorwayHF {
     }
 
     static function default_modules($package = null) {
-        //$package = ($package != null) ? $package : self::PACKAGE_TYPE;
         $default_list = [
             'header-footer',
             'sticky-content',
         ];
         return $default_list;
-        //return ($package == 'free') ? $default_list : $default_list;
     }
 
     public function admin_notice_missing_main_plugin() {
@@ -225,9 +132,6 @@ final class ColorwayHF {
         }
 
         $message = sprintf(
-                /* translators: 1: Plugin name 2: Elementor */
-                // __('Clicking the button below will install and configure the required default Header-Footer Templates.<br/> <a class="button button-primary" href="' . esc_url(admin_url('plugins.php?page=cwhf-setup')) . '">%3$s</a>', 'colorway-hf'), '<strong>' . esc_html__('Colorway Header-Footer Plugin', 'colorway-hf') . '</strong>', '<strong>' . esc_html__('Colorway Header-Footer Plugin', 'colorway-hf') . '</strong>', '<strong>' . esc_html__('Run Setup', 'colorway-hf') . '</strong>'
-
                 __('
                 <div class="notice-container">
                 <div class="notice-image">
@@ -266,9 +170,7 @@ add_action('admin_init', function () {
 
 require ( dirname(__FILE__) . '/colorway-hf-update-checker/plugin-update-checker.php' );
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/MagnetBrains/colorway-header-footer-builder-pro',
-	__FILE__,
-	'colorway-hf'
+                'https://github.com/MagnetBrains/colorway-header-footer-builder-pro', __FILE__, 'colorway-hf'
 );
 
 $myUpdateChecker->getVcsApi()->enableReleaseAssets();

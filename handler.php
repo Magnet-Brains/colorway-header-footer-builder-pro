@@ -15,7 +15,7 @@ class Handler {
 
     public function __construct() {
 
-        // Call the method for ColorwayHF autoloader.
+        // Call the autoloader method.
         $this->registrar_autoloader();
 
         // Enqueue admin scripts.
@@ -80,13 +80,7 @@ class Handler {
         Autoloader::run();
     }
 
-    /**
-     * Instance.
-     *
-     * Ensures only one instance of the plugin class is loaded or can be loaded.
-     *
-     * @return Handler An instance of the class.
-     */
+    /* return Handler An instance of the class. */
     public static function instance() {
         if (is_null(self::$instance)) {
 
@@ -98,7 +92,6 @@ class Handler {
         }
         return self::$instance;
     }
-
 }
 
 // Run the instance.

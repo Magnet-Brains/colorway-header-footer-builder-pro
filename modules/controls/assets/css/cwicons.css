@@ -1,9 +1,5 @@
 @font-face {
   font-family: 'colorwayhf';
-  src:
-    url('../fonts/colorwayhf.ttf?zhcrdi') format('truetype'),
-    url('../fonts/colorwayhf.woff?zhcrdi') format('woff'),
-    url('../fonts/colorwayhf.svg?zhcrdi#colorwayhf') format('svg');
   font-weight: normal;
   font-style: normal;
 }
