@@ -16,7 +16,7 @@ class Ajax {
     }
 
     public function colorwayhf_admin_action() {
-        $this->utils->save_option('widget_list', $_POST['widget_list']);
+        //$this->utils->save_option('widget_list', $_POST['widget_list']);
         $this->utils->save_option('module_list', $_POST['module_list']);
         $this->utils->save_option('user_data', $_POST['user_data']);
 

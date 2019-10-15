@@ -3,9 +3,9 @@ Contributors: inkthemes
 Donate link: http://inkthemes.com/
 Tags: elementor, header, footer
 Requires at least: 4.6.0
-Tested up to: 5.2.4
+Tested up to: 5.2.3
 Requires PHP: 5.6.0
-Stable tag: 1.0.0
+Stable tag: 2.5.2
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Elementor requires at least: 2.4.0

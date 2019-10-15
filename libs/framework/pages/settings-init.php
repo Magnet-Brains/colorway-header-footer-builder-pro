@@ -20,7 +20,7 @@
                             <span><?php esc_html_e('Watch the walk-through video to understand the working of Colorway Header-Footer addon.', 'colorway-hf'); ?></span>
                         </h2>
                         <div class="cwy-video-section embed-container">
-                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/qKnIWGXa4Mg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/-koUxSbrIP8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
                     </div>
                 </div>
             </div>
