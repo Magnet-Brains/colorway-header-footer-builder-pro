@@ -1,0 +1,7 @@
+== colorway header footer builder pro Plugin ==
+
+== Changelog ==
+
+= Version: 1.0.0 =
+======================
+colorway header footer builder pro plugin Initial Released.    

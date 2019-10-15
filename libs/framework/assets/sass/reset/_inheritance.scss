@@ -1,0 +1,158 @@
+@for $i from 0 through 10 {
+    .xs-mb-#{$i} {
+        margin-bottom: $i * 10px;
+    }
+    .xs-pb-#{$i} {
+        padding-bottom: $i * 10px;
+    }
+}
+
+/* margin 0 */
+
+.xs-margin-0 {
+    margin: 0;
+}
+
+/* xs padding */
+
+.xs-padding-0 {
+    padding: 0;
+}
+
+/* overlay list */
+
+.xs-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    z-index: 0;
+}
+
+// first color name and second your selected color
+$colorList: (black, $color-black),
+            (white, $color-white),
+            (primary, $color-primary),
+            (secondary, $color-secondary),
+            (gray, #f7f9fb);
+@each $colorName, $color in $colorList {
+    /* color */
+    .#{$colorName}-color {
+        color: $color;
+    }
+    /* background color */
+    .#{$colorName}-bg {
+        background-color: $color;
+    }
+}
+
+/* remove from control focus box shadow */
+
+.form-control {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+/* bootstrap nav style reset */
+
+.nav-tabs {
+    border-bottom: 0px;
+}
+
+/* tab pane animation */
+
+.tab-pane.animated {
+    animation-duration: 1s;
+}
+
+/* remove iframe box shadow and background */
+
+.mfp-iframe-scaler iframe {
+    box-shadow: none;
+    background: transparent;
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+a {
+    @include transition;
+    display: inline-block;
+}
+
+p {
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+/* section padding */
+
+$section-padding: 120px;
+.section-padding {
+    padding: $section-padding 0;
+}
+
+.section-padding-bottom {
+    padding-bottom: $section-padding;
+}
+
+.section-padding-top {
+    padding-top: $section-padding;
+}
+
+$section-padding: 120px;
+.section-padding-medium {
+    padding: $section-padding 0;
+}
+
+.section-padding-medium-bottom {
+    padding-bottom: $section-padding;
+}
+
+.section-padding-medium-top {
+    padding-top: $section-padding;
+}
+
+h1,
+h2,
+h3 {
+    color: $title-color;
+    font-weight: 700;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+img[data-scrollax] {
+    pointer-events: none;
+}
+
+/* input type number spinner turn of chrome */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* input type number spinner turn of firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.cursive-font {
+    font-family: $fontCursive;
+    font-weight: 700;
+}

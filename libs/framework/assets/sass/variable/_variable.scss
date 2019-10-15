@@ -1,0 +1,66 @@
+// default color set
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-semi-black: #333333;
+
+// color variation
+$color-primary: #f2295b;
+$color-secondary: #0073aa;
+
+// index 3 primary color
+$color-primary-index3: #00f39a;
+
+// social color
+$social: (
+	facebook: #3b5998,
+	twitter: #1da1f2,
+	dribbble: #ea4c89,
+	pinterest: #bd081c,
+	instagram: #e8715c,
+	google-plus: #dd4b39,
+	linkedin: #0077b5,
+	vimeo: #1ab7ea
+);
+$social2: (
+	facebook: #bbeeef,
+	twitter: #f5aa95,
+	pinterest: #dfd6be,
+	google-plus: #dfdfdf,
+);
+
+$mainColor: (
+	primary: $color-primary,
+	secondary: $color-secondary
+);
+
+// body var
+$iconFont: 'FontAwesome';
+$iconFont2: 'iconfont';
+$bodyFont: 'Roboto', sans-serif;
+$fontCursive: 'Playfair Display', serif;
+$titleFont: $bodyFont;
+$fontWeight: 400;
+$bColor: #666666;
+$bfSize: 17px;
+$blineHeight: 31px / $bfSize;
+
+// title color
+$title-color: $color-black;
+
+@function rem($pixels, $context: $bfSize) {
+	@if (unitless($pixels)) {
+		$pixels: $pixels * 1px;
+	}
+	@if (unitless($context)) {
+		$context: $context * 1px;
+	}
+	@return $pixels / $context * 1rem;
+}
+
+@function line-height($font-size, $line-height) {
+	@return $line-height / $font-size;
+}
+
+@function letter-spacing($letterspacing, $font-size) {
+    @return (($letterspacing * $font-size) / 1000) * 1rem;
+}

@@ -1,0 +1,33 @@
+@include tiny-device {
+    :root {
+        font-size: 13px;
+    }
+}
+
+@include small-device {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@include potrait-tablet {
+    :root {
+        font-size: 13px;
+    }
+    .section-padding {
+        padding: 75px 0;
+    }
+
+    $section-padding: 60px;
+    .section-padding-medium {
+        padding: $section-padding 0;
+    }
+    .section-padding-medium-bottom {
+        padding-bottom: $section-padding;
+    }
+    .section-padding-medium-top {
+        padding-top: $section-padding;
+    }
+}
+
+@include tablet {}

@@ -1,0 +1,16 @@
+@import './bootstrap/bootstrap.scss';
+
+// variable
+@import 'variable/_variable.scss';
+
+// mixin
+@import 'mixin/_mixin.scss';
+
+@import './responsive/mixin/mixin.scss';
+
+// function
+@import 'function/_function.scss';
+
+@import './component/tab';
+
+@import './responsive/responsive.scss';

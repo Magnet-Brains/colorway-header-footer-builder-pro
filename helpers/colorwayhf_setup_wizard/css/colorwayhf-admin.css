@@ -1,0 +1,44 @@
+.colorwayhf-setup-notice {
+    padding: 10px 12px 10px 6px;
+    background-color: #f3f2f8;
+    border: 10px solid white;
+    position: relative;
+}
+.colorwayhf-setup-notice .notice-container {
+    padding: 15px 50px 15px 50px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    justify-content: left;
+}
+.colorwayhf-setup-notice h2.notice-heading {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: #000;
+    margin: 1em 0;
+}
+.colorwayhf-setup-notice .notice-content p {
+margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin: .5em 0;
+    padding: 0px 0px 15px 0px;
+}
+.colorway-review-notice-container img {
+    width: 45px;
+}
+.colorwayhf-setup-notice a.button.colorwayhf-templates{
+    color: #fff;
+    border-color: #37ab42;
+    background: #46b450;
+    box-shadow: 2px 2px 0 #d4d4d46e;
+    vertical-align: top;
+    padding: 5px 35px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}

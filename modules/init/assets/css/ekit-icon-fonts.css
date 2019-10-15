@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'colorwayhf';
+  src:
+    url('../fonts/colorwayhf.ttf?fuwixw') format('truetype'),
+    url('../fonts/colorwayhf.woff?fuwixw') format('woff'),
+    url('../fonts/colorwayhf.svg?fuwixw#colorwayhf') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cw {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'colorwayhf' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1; 
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cw-logo:before {
+  content: "\e947";
+}
+.cw-degree-image:before {
+  content: "\e900";
+}
+.cw-accordion:before {
+  content: "\e901";
+}
+.cw-animated-flip-box:before {
+  content: "\e902";
+}
+.cw-animated-text:before {
+  content: "\e903";
+}
+.cw-brands:before {
+  content: "\e904";
+}
+.cw-business-hour:before {
+  content: "\e905";
+}
+.cw-button:before {
+  content: "\e906";
+}
+.cw-carousel:before {
+  content: "\e907";
+}
+.cw-Circle-progress:before {
+  content: "\e908";
+}
+.cw-contact-form:before {
+  content: "\e909";
+}
+.cw-countdown-timer:before {
+  content: "\e90a";
+}
+.cw-download-button:before {
+  content: "\e90b";
+}
+.cw-dropbar:before {
+  content: "\e90c";
+}
+.cw-colorway-hf-logo:before {
+  content: "\e90d";
+}
+.cw-faq:before {
+  content: "\e90e";
+}
+.cw-full-width-scroll:before {
+  content: "\e90f";
+}
+.cw-google-map:before {
+  content: "\e910";
+}
+.cw-heading-style:before {
+  content: "\e911";
+}
+.cw-help-desk:before {
+  content: "\e912";
+}
+.cw-horizontal-timeline:before {
+  content: "\e913";
+}
+.cw-iframe:before {
+  content: "\e914";
+}
+.cw-image-comparison:before {
+  content: "\e915";
+}
+.cw-image-gallery:before {
+  content: "\e916";
+}
+.cw-image-justify:before {
+  content: "\e917";
+}
+.cw-image-magnifier:before {
+  content: "\e918";
+}
+.cw-image-masonry:before {
+  content: "\e919";
+}
+.cw-inline-svg:before {
+  content: "\e91a";
+}
+.cw-instagram:before {
+  content: "\e91b";
+}
+.cw-listing:before {
+  content: "\e91c";
+}
+.cw-music-player:before {
+  content: "\e91d";
+}
+.cw-news-ticker:before {
+  content: "\e91e";
+}
+.cw-off-canvus-menu:before {
+  content: "\e91f";
+}
+.cw-parallax:before {
+  content: "\e920";
+}
+.cw-portfolio:before {
+  content: "\e921";
+}
+.cw-post-banner:before {
+  content: "\e922";
+}
+.cw-post-carousel:before {
+  content: "\e923";
+}
+.cw-post-grid:before {
+  content: "\e924";
+}
+.cw-post-slider:before {
+  content: "\e925";
+}
+.cw-pricing-list:before {
+  content: "\e926";
+}
+.cw-pricing-table:before {
+  content: "\e927";
+}
+.cw-product-featured:before {
+  content: "\e928";
+}
+.cw-product-image:before {
+  content: "\e929";
+}
+.cw-product-recent:before {
+  content: "\e92a";
+}
+.cw-product-sale:before {
+  content: "\e92b";
+}
+.cw-product-top-rated:before {
+  content: "\e92c";
+}
+.cw-product-top-seller:before {
+  content: "\e92d";
+}
+.cw-progress-bar:before {
+  content: "\e92e";
+}
+.cw-protected-content-v2:before {
+  content: "\e92f";
+}
+.cw-protected-content-v3:before {
+  content: "\e930";
+}
+.cw-protected-content:before {
+  content: "\e931";
+}
+.cw-qr_code:before {
+  content: "\e932";
+}
+.cw-scroll-button:before {
+  content: "\e933";
+}
+.cw-search:before {
+  content: "\e934";
+}
+.cw-service:before {
+  content: "\e935";
+}
+.cw-slider-image:before {
+  content: "\e936";
+}
+.cw-social-share:before {
+  content: "\e937";
+}
+.cw-subscribe:before {
+  content: "\e938";
+}
+.cw-tab:before {
+  content: "\e939";
+}
+.cw-table:before {
+  content: "\e93a";
+}
+.cw-team-join:before {
+  content: "\e93b";
+}
+.cw-team-member:before {
+  content: "\e93c";
+}
+.cw-testimonial-carousel:before {
+  content: "\e93d";
+}
+.cw-testimonial-grid:before {
+  content: "\e93e";
+}
+.cw-testimonial-quote:before {
+  content: "\e93f";
+}
+.cw-testimonial-slider:before {
+  content: "\e940";
+}
+.cw-toggle:before {
+  content: "\e941";
+}
+.cw-user-login:before {
+  content: "\e942";
+}
+.cw-user-registration:before {
+  content: "\e943";
+}
+.cw-vertical-timeline:before {
+  content: "\e944";
+}
+.cw-video-player:before {
+  content: "\e945";
+}
+.cw-weather:before {
+  content: "\e946";
+}
