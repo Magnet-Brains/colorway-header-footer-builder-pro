@@ -1,18 +1,8 @@
 <?php
 
 // This is the setup wizard init file.
-// This file changes for each one of dtbaker's themes
-// This is where I extend the default 'Colorway_Hf_Setup_Wizard' class and can do things like remove steps from the setup process.
-
-// This particular init file has a custom "Update" step that is triggered on a theme update. If the setup wizard finds some old shortcodes after a theme update then it will go through the content and replace them. Probably remove this from your end product.
 
 if ( ! defined( 'ABSPATH' ) ) exit;
-
-
-//add_filter('colorway_hf_setup_logo_image','cwhf_colorway_hf_setup_logo_image');
-//function cwhf_colorway_hf_setup_logo_image($old_image_url){
-//	return get_template_directory_uri().'/images/logo.png';
-//}
 
 if ( ! function_exists( 'colorway_hf_theme_setup_wizard' ) ) :
 	function Colorway_Hf_theme_setup_wizard() {
@@ -20,19 +10,10 @@ if ( ! function_exists( 'colorway_hf_theme_setup_wizard' ) ) :
 		if(class_exists('Colorway_Hf_Setup_Wizard')) {
 			class cwhf_Colorway_Hf_Setup_Wizard extends Colorway_Hf_Setup_Wizard {
 
-				/**
-				 * Holds the current instance of the theme manager
-				 *
-				 * @since 1.1.3
-				 * @var Colorway_Hf_Setup_Wizard
-				 */
+				/* Holds the current instance of the theme manager */
 				private static $instance = null;
 
-				/**
-				 * @since 1.1.3
-				 *
-				 * @return Colorway_Hf_Setup_Wizard
-				 */
+				/* return Colorway_Hf_Setup_Wizard */
 				public static function get_instance() {
 					if ( ! self::$instance ) {
 						self::$instance = new self;
@@ -56,7 +37,6 @@ if ( ! function_exists( 'colorway_hf_theme_setup_wizard' ) ) :
 				}
 
 				public function theme_setup_wizard_steps($steps){
-					//unset($steps['design']); // this removes the "logo" step
 					return $steps;
 				}
 				public function theme_setup_wizard_content($content){
@@ -67,7 +47,7 @@ if ( ! function_exists( 'colorway_hf_theme_setup_wizard' ) ) :
 							'pending' => __( 'Pending.', 'colorway-hf' ),
 							'installing' => __( 'Installing Updates.', 'colorway-hf' ),
 							'success' => __( 'Success.', 'colorway-hf' ),
-							'install_callback' => array( $this,'_content_install_updates' ),
+							//'install_callback' => array( $this,'_content_install_updates' ),
 							'checked' => 1
 						));
 					}
@@ -92,42 +72,9 @@ if ( ! function_exists( 'colorway_hf_theme_setup_wizard' ) ) :
 					return false;
 				}
 
-				public function _content_install_updates(){
-
-					// replace old line shortcode with new one.
-					global $wpdb;
-					$sql = "UPDATE ".$wpdb->posts." SET post_content = REPLACE ( post_content, 'boutique_line', 'dtbaker_line');";
-					$wpdb->query($sql);
-
-					$sql = "UPDATE ".$wpdb->posts." SET post_content = REPLACE ( post_content, 'boutique_banner', 'dtbaker_banner');";
-					$wpdb->query($sql);
-
-					$sql = "UPDATE ".$wpdb->posts." SET post_content = REPLACE ( post_content, 'boutique_icon', 'dtbaker_icon');";
-					$wpdb->query($sql);
-
-					$sql = "UPDATE ".$wpdb->posts." SET post_content = REPLACE ( post_content, 'google_map', 'dtbaker_google_map');";
-					$wpdb->query($sql);
-
-
-					$widget = get_option('widget_text');
-					if(is_array($widget)) {
-						foreach ( $widget as $key => $val ) {
-							if ( ! empty( $val['text'] ) ) {
-								$widget[ $key ]['text'] = str_replace( '[dtbaker_icon icon="truck"]', '<div class="dtbaker-icon-truck"></div>', $val['text'] );
-							}
-						}
-						update_option( 'widget_text', $widget );
-					}
-
-					return true;
-
-				}
-
 			}
 
 			cwhf_Colorway_Hf_Setup_Wizard::get_instance();
-		}else{
-			// log error?
 		}
 	}
 endif;

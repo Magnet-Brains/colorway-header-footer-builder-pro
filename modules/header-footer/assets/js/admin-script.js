@@ -1,11 +1,6 @@
 jQuery(document).ready(function ($) {
     "use strict";
 
-    // $('.colorwayhf-select2').select2({
-    //     dropdownParent: $('#colorwayhf_headerfooter_modal'),
-    //     placeholder: "--",
-    // });
-
     $('.row-actions .edit a, .page-title-action, .row-title').on('click', function (e) {
         e.preventDefault();
         var id = 0;
@@ -180,11 +175,6 @@ jQuery(document).ready(function ($) {
             }
         });
     }
-
-
-
-
-
 
     function cw_url_replace_param(url, paramName, paramValue) {
         if (paramValue == null) {

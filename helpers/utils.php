@@ -13,12 +13,6 @@ class Utils {
         return null == $version ? -1 : $version;
     }
 
-    /* Set Colorway Header Footer Builder installed version as current version. */
-
-//    public static function set_version(){
-//        //return update_option('colorwayhf_version', \ColorwayHF::plugin_url());
-//    }
-
     /* Auto generate classname from path. */
     public static function make_classname($dirname) {
         $dirname = pathinfo($dirname, PATHINFO_FILENAME);

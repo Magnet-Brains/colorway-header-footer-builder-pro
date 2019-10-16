@@ -4,7 +4,7 @@
             <div class="attr-col-lg-1 attr-col-md-1"></div>
             <div class="attr-col-lg-10 attr-col-md-10">
                 <div class="cw-admin-section-header colorway-hf-page">
-                    <h2 class="cw-admin-section-heaer-title"><img src="<?php echo self::get_url() . 'assets/images/cwhf-logo.png'; ?>" alt="colorway logo"></h2>
+                    <h2 class="cw-admin-section-heaer-title"><img src="<?php echo esc_url(self::get_url() . 'assets/images/cwhf-logo.png'); ?>" alt="colorway logo"></h2>
                 </div>
             </div>
             <div class="attr-col-lg-1 attr-col-md-1"></div>
@@ -20,7 +20,7 @@
                             <span><?php esc_html_e('Watch the walk-through video to understand the working of Colorway Header-Footer addon.', 'colorway-hf'); ?></span>
                         </h2>
                         <div class="cwy-video-section embed-container">
-                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/qKnIWGXa4Mg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/-koUxSbrIP8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                         <div class="cw-help-content">
                             <p>For a better and smooth experience of Colorway Header-Footer addon, you must use it with - <br/></p><ul class="prereq-ul"><li>Colorway WordPress Theme</li><li>Colorway Addon</li><li>Elementor Builder</li></ul> 
                             <div class="cw-bttn-wrap">
-                                <a class="button button-primary welcome-page-setup" href="<?php echo admin_url() . 'plugins.php?page=cwhf-setup' ?>">Import Header-Footer Templates</a><img src="<?php echo self::get_url() . 'assets/images/left-orange-arrow.gif'; ?>" alt="colorway arrow">
+                                <a class="button button-primary welcome-page-setup" href="<?php echo esc_url(admin_url() . 'plugins.php?page=cwhf-setup') ?>">Import Header-Footer Templates</a><img src="<?php echo esc_url(self::get_url() . 'assets/images/left-orange-arrow.gif'); ?>" alt="colorway arrow">
                             </div>
                         </div>
                     </div>

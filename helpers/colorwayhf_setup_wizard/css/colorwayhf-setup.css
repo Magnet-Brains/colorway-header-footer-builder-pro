@@ -3,7 +3,10 @@
     line-height: 1.5em;
     color: #666
 }
-
+p.lp-redirect-page-pragrahi img {
+    width: 25px;
+    vertical-align: middle;
+}
 body {
     margin: 30px auto 24px;
     box-shadow: none;
@@ -79,7 +82,7 @@ span.res-text {
 }
 
 .colorway-hf-setup-content p {
-    margin: 0 0 15px
+    margin-top: 25px;
 }
 
 .colorway-hf-setup-content a {
@@ -438,13 +441,8 @@ span.res-text {
 
 .colorway-hf-setup-steps li.done:before {
     border-color: #036a9c;
-    /*    border-color: #0091cd;
-        background: #0091cd*/
 }
 
-.colorway-hf-setup .colorway-hf-setup-actions {
-    /*    overflow: hidden*/
-}
 .buttons-ink {
     position: absolute;
     /* top: 17px; */
@@ -453,16 +451,6 @@ span.res-text {
     z-index: 9999;
 }
 .colorway-hf-setup .colorway-hf-setup-actions .button {
-    /*    float: right;
-        font-size: 1em;
-        padding: .5em 1em;
-        line-height: 1em;
-        margin-right: .5em;
-        height: auto;
-        background-color: #ffec80;
-        border: 1px solid #ffec80;
-        font-weight: 600;
-        color: #000;*/
     color: #555;
     border-color: #ccc;
     background: #f7f7f7;
@@ -488,8 +476,7 @@ a.button-pri.button.button-large.button-next {
     text-align: center
 }
 
-
-.dtbaker_loading_button_current{
+.cwhf_loading_button_current{
     color:#CCC !important;
     text-align: center;
 
@@ -546,7 +533,6 @@ a.button-pri.button.button-large.button-next {
 .colorway-hf-setup-pages  .spinner{
     display: inline-block;
     position: absolute;
-
 }
 
 .theme-presets ul{

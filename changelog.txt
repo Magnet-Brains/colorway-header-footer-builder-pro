@@ -2,6 +2,11 @@
 
 == Changelog ==
 
+
+= Version: 1.0.1 =
+======================
+* Fixed sanitization and validation issues in the code.    
+
 = Version: 1.0.0 =
 ======================
 colorway header footer builder pro plugin Initial Released.    

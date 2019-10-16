@@ -9,7 +9,6 @@ class Controls_Ajax_Select2_Api extends Core\Handler_Api {
         $this->prefix = 'ajaxselect2';
     }
 
-
     public function get_post_list(){
         $query_args = [
             'post_type'         => 'post',

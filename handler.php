@@ -37,7 +37,6 @@ class Handler {
 
     public function enqueue_admin() {
         $screen = get_current_screen();
-        // dd($screen);
         if (!in_array($screen->id, ['nav-menus', 'toplevel_page_colorwayhf', 'edit-colorwayhf_template', 'colorwayhf_page_colorwayhf-header-footer'])) {
             return;
         }

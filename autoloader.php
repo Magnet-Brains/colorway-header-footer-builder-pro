@@ -31,7 +31,7 @@ class Autoloader {
         $file = \ColorwayHF::plugin_dir() . $file_name . '.php';
 
         if (file_exists($file)) {
-            require_once( $file );
+            require_once $file;
         }
     }
 

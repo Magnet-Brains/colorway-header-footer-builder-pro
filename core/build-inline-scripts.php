@@ -20,7 +20,6 @@ class Build_Inline_Scripts {
     public function common_js() {
         ob_start();
         ?>
-
         var colorwayhf = {
         resturl: '<?php echo get_rest_url() . 'colorwayhf/v1/'; ?>',
         }

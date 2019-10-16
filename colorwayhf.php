@@ -7,7 +7,7 @@ defined('ABSPATH') || exit;
  * Description:The advanced addons that allows you to create different layouts for header and footer with the help of Elementor.
  * Plugin URI: https://www.inkthemes.com/colorway/
  * Author: InkThemes
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author URI: https://inkthemes.com
  * Text Domain: colorway-hf
  * @package ColorwayHF
@@ -17,7 +17,7 @@ defined('ABSPATH') || exit;
  */
 final class ColorwayHF {
 
-    const VERSION = '1.0.0';
+    const VERSION = '1.0.1';
 
     static function plugin_file() {
         return __FILE__;
@@ -144,7 +144,7 @@ final class ColorwayHF {
                             <button type="button" class="notice-dismiss"><span class="screen-reader-text">Dismiss this notice.</span></button>
                         </div>')
         );
-        printf('<div class="notice notice-warning is-dismissible colorwayhf-setup-notice"><p>%1$s</p></div>', $message);
+        printf('<div class="notice notice-warning is-dismissible colorwayhf-setup-notice"><p>%1$s</p></div>', wp_kses_post($message));
     }
 
 }
@@ -159,7 +159,7 @@ register_activation_hook(__FILE__, function () {
 add_action('admin_init', function () {
     if (get_option('colorwayhf_do_activation_redirect', false)) {
         delete_option('colorwayhf_do_activation_redirect');
-        exit(wp_redirect("plugins.php?page=cwhf-setup"));
+        exit(esc_url(wp_redirect("plugins.php?page=cwhf-setup")));
     }
 });
 

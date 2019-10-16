@@ -16,10 +16,9 @@ class Init{
         $this->url = \ColorwayHF::plugin_url() . 'modules/library/';
 
         // enqueue editor js for elementor.
-        add_action( 'elementor/editor/before_enqueue_scripts', array( $this, 'editor_scripts' ),10);
+        add_action( 'elementor/editor/before_enqueue_scripts', array( $this, 'editor_scripts' ), 10);
 
         // print views and tab variables on footer.
-       // add_action( 'elementor/editor/footer', array($this, 'admin_inline_js') );
         add_action( 'elementor/editor/footer', array( $this, 'print_views' ) );
 
         // enqueue editor css.
@@ -27,10 +26,6 @@ class Init{
 
         // enqueue modal's preview css.
         add_action( 'elementor/preview/enqueue_styles', array( $this, 'preview_styles' ) );
-
-        // call api manager.
-        //new Manager\Api();
-        
     }
 
     public function editor_scripts(){
@@ -56,7 +51,7 @@ class Init{
 			$name = basename( $file, '.php' );
 			ob_start();
 			include $file;
-			printf( '<script type="text/html" id="view-colorwayhf-%1$s">%2$s</script>', $name, ob_get_clean() );
+			printf( '<script type="text/html" id="view-colorwayhf-%1$s">%2$s</script>', wp_kses_post($name), ob_get_clean() );
 		}
 	}
 }

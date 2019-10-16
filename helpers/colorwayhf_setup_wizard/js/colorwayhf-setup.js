@@ -44,14 +44,9 @@ jQuery(document).ready(function ($) {
                     });
                 }
             }
-
         });
-
         return false;
-
     });
-
-
 });
 
 var ColorwayHfWizard = (function ($) {
@@ -73,7 +68,7 @@ var ColorwayHfWizard = (function ($) {
     function window_loaded() {
         // init button clicks:
         $('.button-next').on('click', function (e) {
-            var loading_button = dtbaker_loading_button(this);
+            var loading_button = cwhf_loading_button(this);
             if (!loading_button) {
                 return false;
             }
@@ -292,14 +287,7 @@ var ColorwayHfWizard = (function ($) {
         }
     }
 
-    /**
-     * Callback function for the 'click' event of the 'Set Footer Image'
-     * anchor in its meta box.
-     *
-     * Displays the media uploader for selecting an image.
-     *
-     * @since 0.1.0
-     */
+    /* Displays the media uploader for selecting an image. */
     function renderMediaUploader() {
         'use strict';
 
@@ -332,7 +320,7 @@ var ColorwayHfWizard = (function ($) {
 
     }
 
-    function dtbaker_loading_button(btn) {
+    function cwhf_loading_button(btn) {
 
         var $button = jQuery(btn);
         if ($button.data('done-loading') == 'yes')
@@ -343,7 +331,7 @@ var ColorwayHfWizard = (function ($) {
         var completed = false;
 
         $button.css('width', existing_width);
-        $button.addClass('dtbaker_loading_button_current');
+        $button.addClass('cwhf_loading_button_current');
         var _modifier = $button.is('input') || $button.is('button') ? 'val' : 'text';
         $button[_modifier](loading_text);
         //$button.attr('disabled',true);
@@ -375,11 +363,10 @@ var ColorwayHfWizard = (function ($) {
             done: function () {
                 completed = true;
                 $button[_modifier](existing_text);
-                $button.removeClass('dtbaker_loading_button_current');
+                $button.removeClass('cwhf_loading_button_current');
                 $button.attr('disabled', false);
             }
         }
-
     }
 
     return {

@@ -7,8 +7,7 @@
                     <div class="attr-tab-content" id="v-colorwayhf-tabContent">
                             <div class="attr-tab-pane <?php echo 'attr-active'; ?>" id="v-colorwayhf" role="tabpanel" >
                                 <div class="cw-admin-section-header">
-                                    <h2 class="cw-admin-section-heaer-title"><img src="<?php echo self::get_url() . 'assets/images/cwhf-logo.png'; ?>" alt="colorway logo"></h2>
-                                    
+                                    <h2 class="cw-admin-section-heaer-title"><img src="<?php echo esc_url(self::get_url() . 'assets/images/cwhf-logo.png'); ?>" alt="colorway logo"></h2>                                   
                                 </div>
                                 <?php include self::get_dir() . 'pages/settings-modules.php'; ?>
                             </div>

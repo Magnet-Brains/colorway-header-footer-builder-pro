@@ -16,7 +16,6 @@ class Ajax {
     }
 
     public function colorwayhf_admin_action() {
-        $this->utils->save_option('widget_list', $_POST['widget_list']);
         $this->utils->save_option('module_list', $_POST['module_list']);
         $this->utils->save_option('user_data', $_POST['user_data']);
 
@@ -27,7 +26,7 @@ class Ajax {
         if (is_array($data) || is_object($data)) {
             echo json_encode($data);
         } else {
-            echo $data;
+            echo wp_kses_post($data);
         }
 
         wp_die();

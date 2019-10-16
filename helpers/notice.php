@@ -1,64 +1,39 @@
 <?php
+
 namespace ColorwayHF;
 
-if ( ! defined( 'ABSPATH' ) ) die( 'Forbidden' );
-/**
- * ColorwayHF notice class.
- * Handles dynamically notices for lazy developers.
- *
- * @author XpeedStudo team: alpha omega sigma
- * @since 1.0.0
- */
-
+if (!defined('ABSPATH'))
+    die('Forbidden');
+/* ColorwayHF notice class. */
 
 class Notice {
+    /* Dismiss Notice. */
 
-	/**
-	 * Constructor
-	 *
-	 * @since 1.0.0
-	 */
-	public function __construct() {
-		add_action(	'admin_footer', [ $this, 'enqueue_scripts' ], 9999);
-		add_action( 'wp_ajax_colorwayhf-notices', [ $this, 'dismiss' ] );
-	}
+    public function dismiss() {
 
+        $id = ( isset($_POST['id']) ) ? $_POST['id'] : '';
+        $time = ( isset($_POST['time']) ) ? $_POST['time'] : '';
+        $meta = ( isset($_POST['meta']) ) ? $_POST['meta'] : '';
 
-	/**
-	 * Dismiss Notice.
-	 *
-	 * @since 1.0.0
-	 * @return void
-	 */
-	public function dismiss() {
+        // Valid inputs?
+        if (!empty($id)) {
 
-		$id   = ( isset( $_POST['id'] ) ) ? $_POST['id'] : '';
-		$time = ( isset( $_POST['time'] ) ) ? $_POST['time'] : '';
-		$meta = ( isset( $_POST['meta'] ) ) ? $_POST['meta'] : '';
+            if ('user' === $meta) {
+                update_user_meta(get_current_user_id(), $id, true);
+            } else {
+                set_transient($id, true, $time);
+            }
 
-		// Valid inputs?
-		if ( ! empty( $id ) ) {
+            wp_send_json_success();
+        }
 
-			if ( 'user' === $meta ) {
-				update_user_meta( get_current_user_id(), $id, true );
-			} else {
-				set_transient( $id, true, $time );
-			}
+        wp_send_json_error();
+    }
 
-			wp_send_json_success();
-		}
+    /* Enqueue Scripts. */
 
-		wp_send_json_error();
-	}
-
-	/**
-	 * Enqueue Scripts.
-	 *
-	 * @since 1.0.0
-	 * @return void
-	 */
-	public function enqueue_scripts() {
-		echo "
+    public function enqueue_scripts() {
+        echo "
 			<script>
 			jQuery(document).ready(function ($) {
 				$( '.colorwayhf-notice.is-dismissible' ).on( 'click', '.notice-dismiss', function() {
@@ -84,102 +59,94 @@ class Notice {
 			});
 			</script>
 		";
-	}
+    }
 
-	/**
-	 * Show Notices
-	 *
-	 * @since 1.0.0
-	 * @return void
-	 */
-	public static function push($notice) {
+    /* Show Notices */
 
-		$defaults = [
-			'id'               => '',
-			'type'             => 'info',
-			'show_if'          => true,
-			'message'          => '',
-			'class'            => 'colorwayhf-active-notice',
-			'dismissible'      => false,
-			'btn'			   => [],
-			'dismissible-meta' => 'user',
-			'dismissible-time' => WEEK_IN_SECONDS,
-			'data'             => '',
-		];
+    public static function push($notice) {
 
-		$notice = wp_parse_args( $notice, $defaults );
+        $defaults = [
+            'id' => '',
+            'type' => 'info',
+            'show_if' => true,
+            'message' => '',
+            'class' => 'colorwayhf-active-notice',
+            'dismissible' => false,
+            'btn' => [],
+            'dismissible-meta' => 'user',
+            'dismissible-time' => WEEK_IN_SECONDS,
+            'data' => '',
+        ];
 
-		$classes = [ 'colorwayhf-notice', 'notice' ];
+        $notice = wp_parse_args($notice, $defaults);
 
-		$classes[] = $notice['class'];
-		if ( isset( $notice['type'] ) ) {
-			$classes[] = 'notice-' . $notice['type'];
-		}
+        $classes = ['colorwayhf-notice', 'notice'];
 
-		// Is notice dismissible?
-		if ( true === $notice['dismissible'] ) {
-			$classes[] = 'is-dismissible';
+        $classes[] = $notice['class'];
+        if (isset($notice['type'])) {
+            $classes[] = 'notice-' . $notice['type'];
+        }
 
-			// Dismissable time.
-			$notice['data'] = ' dismissible-time=' . esc_attr( $notice['dismissible-time'] ) . ' ';
-		}
+        // Is notice dismissible?
+        if (true === $notice['dismissible']) {
+            $classes[] = 'is-dismissible';
 
-		// Notice ID.
-		$notice_id    = 'colorwayhf-sites-notice-id-' . $notice['id'];
-		$notice['id'] = $notice_id;
-		if ( ! isset( $notice['id'] ) ) {
-			$notice_id    = 'colorwayhf-sites-notice-id-' . $notice['id'];
-			$notice['id'] = $notice_id;
-		} else {
-			$notice_id = $notice['id'];
-		}
+            // Dismissable time.
+            $notice['data'] = ' dismissible-time=' . esc_attr($notice['dismissible-time']) . ' ';
+        }
 
-		$notice['classes'] = implode( ' ', $classes );
+        // Notice ID.
+        $notice_id = 'colorwayhf-sites-notice-id-' . $notice['id'];
+        $notice['id'] = $notice_id;
+        if (!isset($notice['id'])) {
+            $notice_id = 'colorwayhf-sites-notice-id-' . $notice['id'];
+            $notice['id'] = $notice_id;
+        } else {
+            $notice_id = $notice['id'];
+        }
 
-		// User meta.
-		$notice['data'] .= ' dismissible-meta=' . esc_attr( $notice['dismissible-meta'] ) . ' ';
-		if ( 'user' === $notice['dismissible-meta'] ) {
-			$expired = get_user_meta( get_current_user_id(), $notice_id, true );
-		} elseif ( 'transient' === $notice['dismissible-meta'] ) {
-			$expired = get_transient( $notice_id );
-		}
+        $notice['classes'] = implode(' ', $classes);
 
-		// Notice visible after transient expire.
-		if ( isset( $notice['show_if'] ) ) {
-			if ( true === $notice['show_if'] ) {
+        // User meta.
+        $notice['data'] .= ' dismissible-meta=' . esc_attr($notice['dismissible-meta']) . ' ';
+        if ('user' === $notice['dismissible-meta']) {
+            $expired = get_user_meta(get_current_user_id(), $notice_id, true);
+        } elseif ('transient' === $notice['dismissible-meta']) {
+            $expired = get_transient($notice_id);
+        }
 
-				// Is transient expired?
-				if ( false === $expired || empty( $expired ) ) {
-					self::markup($notice);
-				}
-			}
-		} else {
-			self::markup($notice);
-		}
-	}
+        // Notice visible after transient expire.
+        if (isset($notice['show_if'])) {
+            if (true === $notice['show_if']) {
 
-	/**
-	 * Markup Notice.
-	 *
-	 * @since 1.0.0
-	 * @param  array $notice Notice markup.
-	 * @return void
-	 */
-	public static function markup( $notice = [] ) {
-		?>
-		<div id="<?php echo esc_attr( $notice['id'] ); ?>" class="<?php echo esc_attr( $notice['classes'] ); ?>" <?php echo \ColorwayHF\Utils::render($notice['data']); ?>>
-			<p>
-				<?php echo \ColorwayHF\Utils::kses($notice['message']); ?>
-			</p>
+                // Is transient expired?
+                if (false === $expired || empty($expired)) {
+                    self::markup($notice);
+                }
+            }
+        } else {
+            self::markup($notice);
+        }
+    }
 
-			<?php if(!empty($notice['btn'])):?>
-			<p>
-				<a href="<?php echo esc_url($notice['btn']['url']); ?>" class="button-primary"><?php echo esc_html($notice['btn']['label']); ?></a>
-			</p>
-			<?php endif; ?>
-		</div>
-		<?php
-	}
+    /* Markup Notice. */
+
+    public static function markup($notice = []) {
+        ?>
+        <div id="<?php echo esc_attr($notice['id']); ?>" class="<?php echo esc_attr($notice['classes']); ?>" <?php echo \ColorwayHF\Utils::render($notice['data']); ?>>
+            <p>
+                <?php echo \ColorwayHF\Utils::kses($notice['message']); ?>
+            </p>
+
+            <?php if (!empty($notice['btn'])): ?>
+                <p>
+                    <a href="<?php echo esc_url($notice['btn']['url']); ?>" class="button-primary"><?php echo esc_html($notice['btn']['label']); ?></a>
+                </p>
+            <?php endif; ?>
+        </div>
+        <?php
+    }
+
 }
 
 new Notice();

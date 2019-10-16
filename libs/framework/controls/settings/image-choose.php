@@ -1,8 +1,4 @@
 <div class="attr-input attr-input-image-choose <?php echo esc_attr($class); ?>">
-<?php
-    // $options['large_img'] $options['icon'] $options['small_img'] self::strify($name) $label $value
-    // $options['checked'] true / false
-?>
     <div class="cw-admin-input-switch cw-admin-card-shadow attr-card-body">
         <input <?php echo esc_attr($options['checked'] === true ? 'checked' : ''); ?> 
             type="checkbox" value="<?php echo esc_attr($value); ?>" 

@@ -3,15 +3,9 @@ namespace ColorwayHF\Modules\Header_Footer\Theme_Hooks;
 
 defined( 'ABSPATH' ) || exit;
 
-/**
- * Force fully replace the header footer.
- */
+/*  Force fully replace the header footer. */
 class Theme_Support {
-
-
-	/**
-	 * Run all the Actions / Filters.
-	 */
+	/*  Run all the Actions / Filters. */
 	function __construct($template_ids) {
 		if($template_ids[0] != null){
 			add_action( 'get_header', [ $this, 'get_header' ] );
@@ -56,6 +50,4 @@ class Theme_Support {
 		locate_template( $templates, true );
 		ob_get_clean();
 	}
-
-
 }

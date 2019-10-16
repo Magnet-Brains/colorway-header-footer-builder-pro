@@ -6,7 +6,6 @@ defined( 'ABSPATH' ) || exit;
 class Init{
 
 	public $dir;
-	
 	public $url;
 
     public function __construct(){

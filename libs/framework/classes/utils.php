@@ -49,9 +49,6 @@ class Utils{
         return strtolower(preg_replace("/[^A-Za-z0-9]/", "__", $str));
     }
 
-
-
-
     public static function instance() {
         if ( is_null( self::$instance ) ) {
 
