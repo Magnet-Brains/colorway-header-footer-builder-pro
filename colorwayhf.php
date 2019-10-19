@@ -7,7 +7,7 @@ defined('ABSPATH') || exit;
  * Description:The advanced addons that allows you to create different layouts for header and footer with the help of Elementor.
  * Plugin URI: https://www.inkthemes.com/colorway/
  * Author: InkThemes
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author URI: https://inkthemes.com
  * Text Domain: colorway-hf
  * @package ColorwayHF

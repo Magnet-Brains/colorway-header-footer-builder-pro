@@ -5,7 +5,7 @@ Tags: elementor, header, footer
 Requires at least: 4.6.0
 Tested up to: 5.2.4
 Requires PHP: 5.6.0
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Elementor requires at least: 2.4.0
@@ -27,6 +27,10 @@ e.g.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 ===== Change-log ======
+
+= Version: 1.0.2 =
+======================
+* Addded default z-index setting in header footer templates.
 
 = Version: 1.0.1 =
 ======================

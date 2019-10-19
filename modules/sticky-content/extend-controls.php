@@ -13,7 +13,7 @@ class ColorwayHF_Extend_Sticky{
 		$element->start_controls_section(
 			'wc_section_scroll_effect',
 			[
-				'label' => __( 'Sticky Effect', 'colorway-hf' ),
+				'label' => __( 'ColorwayHF Sticky Effect', 'colorway-hf' ),
 				'tab' => Controls_Manager::TAB_ADVANCED,
 			]
 		);

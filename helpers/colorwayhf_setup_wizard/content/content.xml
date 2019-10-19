@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/5.2.4" created="2019-10-15 06:27" -->
+	<!-- generator="WordPress/5.2.4" created="2019-10-19 08:11" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -26,38 +26,30 @@
 >
 
 <channel>
-	<title>wordpress-testing</title>
-	<link>http://localhost/wordpress-testing</link>
+	<title>.OrgThemes</title>
+	<link>http://localhost/wordpress4</link>
 	<description>Just another WordPress site</description>
-	<pubDate>Tue, 15 Oct 2019 06:27:48 +0000</pubDate>
+	<pubDate>Sat, 19 Oct 2019 08:11:53 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
-	<wp:base_site_url>http://localhost/wordpress-testing</wp:base_site_url>
-	<wp:base_blog_url>http://localhost/wordpress-testing</wp:base_blog_url>
+	<wp:base_site_url>http://localhost/wordpress4</wp:base_site_url>
+	<wp:base_blog_url>http://localhost/wordpress4</wp:base_blog_url>
 
-		<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[chetaliparve10@gmail.com]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+		<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[adarshsoni500@gmail.com]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
 				
 	<generator>https://wordpress.org/?v=5.2.4</generator>
 
-<image>
-	<url>http://localhost/wordpress-testing/wp-content/uploads/2019/02/Favicon-InkThemes-4.png</url>
-	<title>wordpress-testing</title>
-	<link>http://localhost/wordpress-testing</link>
-	<width>32</width>
-	<height>32</height>
-</image> 
-
 		<item>
 		<title>Header Template 1</title>
-		<link>http://localhost/wordpress-testing/?colorwayhf_template=header-for</link>
+		<link>http://localhost/wordpress4/?colorwayhf_template=header-for</link>
 		<pubDate>Mon, 07 Oct 2019 10:53:13 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://localhost/wordpress-testing/?colorwayhf_template=header-for</guid>
 		<description></description>
-		<content:encoded><![CDATA[<img width="214" height="35" src="https://www.inkthemesdemo.com/demo1/education-center/wp-content/uploads/sites/131/2019/10/education.png" alt="" />											
-            <nav>
-                <ul id="ink-navmenu"><li data-id="1389"><a href="https://www.inkthemesdemo.com/demo1/education-center/">HOME</a></li><li data-id="1387"><a href="https://www.inkthemesdemo.com/demo1/education-center/about-us/">ABOUT US</a></li><li data-id="1388"><a href="https://www.inkthemesdemo.com/demo1/education-center/blog/">BLOG</a></li><li data-id="1390"><a href="https://www.inkthemesdemo.com/demo1/education-center/courses/">COURSES</a></li><li data-id="1391"><a href="https://www.inkthemesdemo.com/demo1/education-center/contact-us/">CONTACT US</a></li></ul>                <label for="menu-btn"></label>    
+		<content:encoded><![CDATA[<img src="https://www.inkthemesdemo.com/demo1/education-center/wp-content/uploads/sites/131/2019/10/education.png" title="" alt="" />											
+            <nav ink-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;delay-hide&quot;:800,&quot;duration&quot;:200}">
+                <ul id="ink-navmenu"><li style="" data-id="2560"><a href="https://www.inkthemesdemo.com/demo1/education-center/">HOME</a></li><li style="" data-id="2561"><a href="https://www.inkthemesdemo.com/demo1/education-center/about-us/">ABOUT US</a></li><li style="" data-id="2562"><a href="https://www.inkthemesdemo.com/demo1/education-center/blog/">BLOG</a></li><li style="" data-id="2563"><a href="https://www.inkthemesdemo.com/demo1/education-center/courses/">COURSES</a></li><li style="" data-id="2564"><a href="https://www.inkthemesdemo.com/demo1/education-center/contact-us/">CONTACT US</a></li></ul>                <label for="menu-btn"></label>    
             </nav>
 			<a href="#" role="button">
 						Join Now !
@@ -77,7 +69,11 @@
 		<wp:is_sticky>0</wp:is_sticky>
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_elementor_controls_usage]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		<wp:meta_value><![CDATA[a:5:{s:5:"image";a:3:{s:5:"count";i:1;s:15:"control_percent";i:1;s:8:"controls";a:1:{s:7:"content";a:1:{s:13:"section_image";a:2:{s:5:"image";i:1;s:5:"align";i:1;}}}}s:6:"column";a:3:{s:5:"count";i:3;s:15:"control_percent";i:0;s:8:"controls";a:2:{s:6:"layout";a:1:{s:6:"layout";a:2:{s:12:"_inline_size";i:3;s:16:"content_position";i:2;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:2:{s:6:"margin";i:1;s:7:"padding";i:1;}}}}s:15:"ink-wp-menu-bar";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:3:{s:7:"content";a:1:{s:22:"section_navbar_content";a:1:{s:6:"navbar";i:1;}}s:8:"advanced";a:1:{s:14:"_section_style";a:2:{s:7:"_margin";i:1;s:8:"_padding";i:1;}}s:5:"style";a:1:{s:18:"section_menu_style";a:5:{s:33:"menu_typography_normal_typography";i:1;s:34:"menu_typography_normal_font_family";i:1;s:32:"menu_typography_normal_font_size";i:1;s:34:"menu_typography_normal_font_weight";i:1;s:15:"menu_link_color";i:1;}}}}s:6:"button";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:2:{s:7:"content";a:1:{s:14:"section_button";a:1:{s:4:"text";i:1;}}s:5:"style";a:1:{s:13:"section_style";a:3:{s:21:"typography_typography";i:1;s:22:"typography_font_family";i:1;s:16:"background_color";i:1;}}}}s:7:"section";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:3:{s:6:"layout";a:1:{s:17:"section_structure";a:1:{s:9:"structure";i:1;}}s:5:"style";a:1:{s:18:"section_background";a:2:{s:21:"background_background";i:1;s:16:"background_color";i:1;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:3:{s:6:"margin";i:1;s:7:"padding";i:1;s:7:"z_index";i:1;}}}}}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_controls_usage]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:5:{s:5:"image";a:3:{s:5:"count";i:1;s:15:"control_percent";i:1;s:8:"controls";a:1:{s:7:"content";a:1:{s:13:"section_image";a:2:{s:5:"image";i:1;s:5:"align";i:1;}}}}s:6:"column";a:3:{s:5:"count";i:3;s:15:"control_percent";i:0;s:8:"controls";a:2:{s:6:"layout";a:1:{s:6:"layout";a:2:{s:12:"_inline_size";i:3;s:16:"content_position";i:2;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:2:{s:6:"margin";i:1;s:7:"padding";i:1;}}}}s:15:"ink-wp-menu-bar";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:3:{s:7:"content";a:1:{s:22:"section_navbar_content";a:1:{s:6:"navbar";i:1;}}s:8:"advanced";a:1:{s:14:"_section_style";a:2:{s:7:"_margin";i:1;s:8:"_padding";i:1;}}s:5:"style";a:1:{s:18:"section_menu_style";a:5:{s:33:"menu_typography_normal_typography";i:1;s:34:"menu_typography_normal_font_family";i:1;s:32:"menu_typography_normal_font_size";i:1;s:34:"menu_typography_normal_font_weight";i:1;s:15:"menu_link_color";i:1;}}}}s:6:"button";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:2:{s:7:"content";a:1:{s:14:"section_button";a:1:{s:4:"text";i:1;}}s:5:"style";a:1:{s:13:"section_style";a:3:{s:21:"typography_typography";i:1;s:22:"typography_font_family";i:1;s:16:"background_color";i:1;}}}}s:7:"section";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:3:{s:6:"layout";a:1:{s:17:"section_structure";a:1:{s:9:"structure";i:1;}}s:5:"style";a:1:{s:18:"section_background";a:2:{s:21:"background_background";i:1;s:16:"background_color";i:1;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:3:{s:6:"margin";i:1;s:7:"padding";i:1;s:7:"z_index";i:1;}}}}}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
@@ -121,16 +117,16 @@
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_elementor_data]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[{"id":"fee45ca","elType":"section","settings":{"structure":"30","background_background":"classic","background_color":"#ffffff","margin":{"unit":"px","top":"0","right":0,"bottom":"0","left":0,"isLinked":false},"padding":{"unit":"px","top":"10","right":"0","bottom":"10","left":"0","isLinked":false}},"elements":[{"id":"970250b","elType":"column","settings":{"_column_size":33,"_inline_size":42.368,"content_position":"center","margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[{"id":"7fcf72c","elType":"widget","settings":{"image":{"url":"https:\/\/www.inkthemesdemo.com\/demo1\/education-center\/wp-content\/uploads\/sites\/131\/2019\/10\/education.png","id":2557},"align":"left"},"elements":[],"widgetType":"image"}],"isInner":false},{"id":"81e55a7","elType":"column","settings":{"_column_size":33,"_inline_size":43.071,"content_position":"center"},"elements":[{"id":"ecf35d0","elType":"widget","settings":{"navbar":"main-menu","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"menu_typography_normal_typography":"custom","menu_typography_normal_font_family":"Montserrat","menu_typography_normal_font_size":{"unit":"px","size":13,"sizes":[]},"menu_typography_normal_font_weight":"400","menu_link_color":"#000000"},"elements":[],"widgetType":"ink-wp-menu-bar"}],"isInner":false},{"id":"081adcb","elType":"column","settings":{"_column_size":33,"_inline_size":14.557},"elements":[{"id":"2c87f58","elType":"widget","settings":{"text":"Join Now !","typography_typography":"custom","typography_font_family":"Montserrat","background_color":"#4054b2"},"elements":[],"widgetType":"button"}],"isInner":false}],"isInner":false}]]]></wp:meta_value>
+		<wp:meta_value><![CDATA[[{"id":"fee45ca","elType":"section","settings":{"structure":"30","background_background":"classic","background_color":"#ffffff","margin":{"unit":"px","top":"0","right":0,"bottom":"0","left":0,"isLinked":false},"padding":{"unit":"px","top":"10","right":"0","bottom":"10","left":"0","isLinked":false},"z_index":999},"elements":[{"id":"970250b","elType":"column","settings":{"_column_size":33,"_inline_size":42.368,"content_position":"center","margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[{"id":"7fcf72c","elType":"widget","settings":{"image":{"url":"https:\/\/www.inkthemesdemo.com\/demo1\/education-center\/wp-content\/uploads\/sites\/131\/2019\/10\/education.png","id":2557},"align":"left"},"elements":[],"widgetType":"image"}],"isInner":false},{"id":"81e55a7","elType":"column","settings":{"_column_size":33,"_inline_size":43.071,"content_position":"center"},"elements":[{"id":"ecf35d0","elType":"widget","settings":{"navbar":"main-menu","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"menu_typography_normal_typography":"custom","menu_typography_normal_font_family":"Montserrat","menu_typography_normal_font_size":{"unit":"px","size":13,"sizes":[]},"menu_typography_normal_font_weight":"400","menu_link_color":"#000000"},"elements":[],"widgetType":"ink-wp-menu-bar"}],"isInner":false},{"id":"081adcb","elType":"column","settings":{"_column_size":33,"_inline_size":14.557},"elements":[{"id":"2c87f58","elType":"widget","settings":{"text":"Join Now !","typography_typography":"custom","typography_font_family":"Montserrat","background_color":"#4054b2"},"elements":[],"widgetType":"button"}],"isInner":false}],"isInner":false}]]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_elementor_controls_usage]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:5:{s:5:"image";a:3:{s:5:"count";i:1;s:15:"control_percent";i:1;s:8:"controls";a:1:{s:7:"content";a:1:{s:13:"section_image";a:2:{s:5:"image";i:1;s:5:"align";i:1;}}}}s:6:"column";a:3:{s:5:"count";i:3;s:15:"control_percent";i:0;s:8:"controls";a:2:{s:6:"layout";a:1:{s:6:"layout";a:2:{s:12:"_inline_size";i:3;s:16:"content_position";i:2;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:2:{s:6:"margin";i:1;s:7:"padding";i:1;}}}}s:15:"ink-wp-menu-bar";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:3:{s:7:"content";a:1:{s:22:"section_navbar_content";a:1:{s:6:"navbar";i:1;}}s:8:"advanced";a:1:{s:14:"_section_style";a:2:{s:7:"_margin";i:1;s:8:"_padding";i:1;}}s:5:"style";a:1:{s:18:"section_menu_style";a:5:{s:33:"menu_typography_normal_typography";i:1;s:34:"menu_typography_normal_font_family";i:1;s:32:"menu_typography_normal_font_size";i:1;s:34:"menu_typography_normal_font_weight";i:1;s:15:"menu_link_color";i:1;}}}}s:6:"button";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:2:{s:7:"content";a:1:{s:14:"section_button";a:1:{s:4:"text";i:1;}}s:5:"style";a:1:{s:13:"section_style";a:3:{s:21:"typography_typography";i:1;s:22:"typography_font_family";i:1;s:16:"background_color";i:1;}}}}s:7:"section";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:3:{s:6:"layout";a:1:{s:17:"section_structure";a:1:{s:9:"structure";i:1;}}s:5:"style";a:1:{s:18:"section_background";a:2:{s:21:"background_background";i:1;s:16:"background_color";i:1;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:2:{s:6:"margin";i:1;s:7:"padding";i:1;}}}}}]]></wp:meta_value>
+		<wp:meta_value><![CDATA[a:5:{s:5:"image";a:3:{s:5:"count";i:1;s:15:"control_percent";i:1;s:8:"controls";a:1:{s:7:"content";a:1:{s:13:"section_image";a:2:{s:5:"image";i:1;s:5:"align";i:1;}}}}s:6:"column";a:3:{s:5:"count";i:3;s:15:"control_percent";i:0;s:8:"controls";a:2:{s:6:"layout";a:1:{s:6:"layout";a:2:{s:12:"_inline_size";i:3;s:16:"content_position";i:2;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:2:{s:6:"margin";i:1;s:7:"padding";i:1;}}}}s:15:"ink-wp-menu-bar";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:3:{s:7:"content";a:1:{s:22:"section_navbar_content";a:1:{s:6:"navbar";i:1;}}s:8:"advanced";a:1:{s:14:"_section_style";a:2:{s:7:"_margin";i:1;s:8:"_padding";i:1;}}s:5:"style";a:1:{s:18:"section_menu_style";a:5:{s:33:"menu_typography_normal_typography";i:1;s:34:"menu_typography_normal_font_family";i:1;s:32:"menu_typography_normal_font_size";i:1;s:34:"menu_typography_normal_font_weight";i:1;s:15:"menu_link_color";i:1;}}}}s:6:"button";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:2:{s:7:"content";a:1:{s:14:"section_button";a:1:{s:4:"text";i:1;}}s:5:"style";a:1:{s:13:"section_style";a:3:{s:21:"typography_typography";i:1;s:22:"typography_font_family";i:1;s:16:"background_color";i:1;}}}}s:7:"section";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:3:{s:6:"layout";a:1:{s:17:"section_structure";a:1:{s:9:"structure";i:1;}}s:5:"style";a:1:{s:18:"section_background";a:2:{s:21:"background_background";i:1;s:16:"background_color";i:1;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:3:{s:6:"margin";i:1;s:7:"padding";i:1;s:7:"z_index";i:1;}}}}}]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
 		<title>Header Template 3</title>
-		<link>http://localhost/wordpress-testing/?colorwayhf_template=header</link>
+		<link>http://localhost/wordpress4/?colorwayhf_template=header</link>
 		<pubDate>Mon, 07 Oct 2019 10:44:05 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://localhost/wordpress-testing/?colorwayhf_template=header</guid>
@@ -162,6 +158,10 @@
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 														<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_controls_usage]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
 		<wp:meta_key><![CDATA[_elementor_controls_usage]]></wp:meta_key>
 		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
 		</wp:postmeta>
@@ -216,7 +216,7 @@
 							</item>
 					<item>
 		<title>Footer Template 1</title>
-		<link>http://localhost/wordpress-testing/?colorwayhf_template=test-footer</link>
+		<link>http://localhost/wordpress4/?colorwayhf_template=test-footer</link>
 		<pubDate>Mon, 07 Oct 2019 10:46:22 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://localhost/wordpress-testing/?colorwayhf_template=test-footer</guid>
@@ -340,6 +340,10 @@
 		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_controls_usage]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 		<wp:meta_value><![CDATA[elementor_canvas]]></wp:meta_value>
 		</wp:postmeta>
@@ -390,14 +394,14 @@
 							</item>
 					<item>
 		<title>Header Template 2</title>
-		<link>http://localhost/wordpress-testing/?colorwayhf_template=header-template-2</link>
+		<link>http://localhost/wordpress4/?colorwayhf_template=header-template-2</link>
 		<pubDate>Sat, 12 Oct 2019 06:59:26 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">https://www.inkthemesdemo.com/demo1/education-center/?colorwayhf_template=header-template-2</guid>
 		<description></description>
-		<content:encoded><![CDATA[<img width="206" height="32" src="https://www.inkthemesdemo.com/demo1/education-center/wp-content/uploads/sites/131/2019/10/green.png" alt="" />											
-            <nav>
-                <ul id="ink-navmenu"><li data-id="1389"><a href="https://www.inkthemesdemo.com/demo1/education-center/">HOME</a></li><li data-id="1387"><a href="https://www.inkthemesdemo.com/demo1/education-center/about-us/">ABOUT US</a></li><li data-id="1388"><a href="https://www.inkthemesdemo.com/demo1/education-center/blog/">BLOG</a></li><li data-id="1390"><a href="https://www.inkthemesdemo.com/demo1/education-center/courses/">COURSES</a></li><li data-id="1391"><a href="https://www.inkthemesdemo.com/demo1/education-center/contact-us/">CONTACT US</a></li></ul>                <label for="menu-btn"></label>    
+		<content:encoded><![CDATA[<img src="https://www.inkthemesdemo.com/demo1/education-center/wp-content/uploads/sites/131/2019/10/green.png" title="" alt="" />											
+            <nav ink-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;delay-hide&quot;:800,&quot;duration&quot;:200}">
+                <ul id="ink-navmenu"><li style="" data-id="2560"><a href="https://www.inkthemesdemo.com/demo1/education-center/">HOME</a></li><li style="" data-id="2561"><a href="https://www.inkthemesdemo.com/demo1/education-center/about-us/">ABOUT US</a></li><li style="" data-id="2562"><a href="https://www.inkthemesdemo.com/demo1/education-center/blog/">BLOG</a></li><li style="" data-id="2563"><a href="https://www.inkthemesdemo.com/demo1/education-center/courses/">COURSES</a></li><li style="" data-id="2564"><a href="https://www.inkthemesdemo.com/demo1/education-center/contact-us/">CONTACT US</a></li></ul>                <label for="menu-btn"></label>    
             </nav>
 							<a href="" target="_blank" rel="noopener noreferrer">
 					Facebook
@@ -423,7 +427,11 @@
 		<wp:is_sticky>0</wp:is_sticky>
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_elementor_controls_usage]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		<wp:meta_value><![CDATA[a:5:{s:5:"image";a:3:{s:5:"count";i:1;s:15:"control_percent";i:1;s:8:"controls";a:1:{s:7:"content";a:1:{s:13:"section_image";a:2:{s:5:"image";i:1;s:5:"align";i:1;}}}}s:6:"column";a:3:{s:5:"count";i:3;s:15:"control_percent";i:0;s:8:"controls";a:2:{s:6:"layout";a:1:{s:6:"layout";a:2:{s:12:"_inline_size";i:3;s:16:"content_position";i:2;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:2:{s:6:"margin";i:1;s:7:"padding";i:1;}}}}s:15:"ink-wp-menu-bar";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:3:{s:7:"content";a:1:{s:22:"section_navbar_content";a:1:{s:6:"navbar";i:1;}}s:8:"advanced";a:1:{s:14:"_section_style";a:2:{s:7:"_margin";i:1;s:8:"_padding";i:1;}}s:5:"style";a:1:{s:18:"section_menu_style";a:5:{s:33:"menu_typography_normal_typography";i:1;s:34:"menu_typography_normal_font_family";i:1;s:32:"menu_typography_normal_font_size";i:1;s:34:"menu_typography_normal_font_weight";i:1;s:15:"menu_link_color";i:1;}}}}s:12:"social-icons";a:3:{s:5:"count";i:1;s:15:"control_percent";i:1;s:8:"controls";a:2:{s:7:"content";a:1:{s:19:"section_social_icon";a:2:{s:16:"social_icon_list";i:1;s:5:"shape";i:1;}}s:5:"style";a:1:{s:20:"section_social_style";a:1:{s:9:"icon_size";i:1;}}}}s:7:"section";a:3:{s:5:"count";i:1;s:15:"control_percent";i:3;s:8:"controls";a:3:{s:6:"layout";a:1:{s:17:"section_structure";a:1:{s:9:"structure";i:1;}}s:5:"style";a:2:{s:18:"section_background";a:2:{s:21:"background_background";i:1;s:16:"background_color";i:1;}s:14:"section_border";a:3:{s:13:"border_border";i:1;s:12:"border_width";i:1;s:12:"border_color";i:1;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:3:{s:6:"margin";i:1;s:7:"padding";i:1;s:7:"z_index";i:1;}}}}}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_controls_usage]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:5:{s:5:"image";a:3:{s:5:"count";i:1;s:15:"control_percent";i:1;s:8:"controls";a:1:{s:7:"content";a:1:{s:13:"section_image";a:2:{s:5:"image";i:1;s:5:"align";i:1;}}}}s:6:"column";a:3:{s:5:"count";i:3;s:15:"control_percent";i:0;s:8:"controls";a:2:{s:6:"layout";a:1:{s:6:"layout";a:2:{s:12:"_inline_size";i:3;s:16:"content_position";i:2;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:2:{s:6:"margin";i:1;s:7:"padding";i:1;}}}}s:15:"ink-wp-menu-bar";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:3:{s:7:"content";a:1:{s:22:"section_navbar_content";a:1:{s:6:"navbar";i:1;}}s:8:"advanced";a:1:{s:14:"_section_style";a:2:{s:7:"_margin";i:1;s:8:"_padding";i:1;}}s:5:"style";a:1:{s:18:"section_menu_style";a:5:{s:33:"menu_typography_normal_typography";i:1;s:34:"menu_typography_normal_font_family";i:1;s:32:"menu_typography_normal_font_size";i:1;s:34:"menu_typography_normal_font_weight";i:1;s:15:"menu_link_color";i:1;}}}}s:12:"social-icons";a:3:{s:5:"count";i:1;s:15:"control_percent";i:1;s:8:"controls";a:2:{s:7:"content";a:1:{s:19:"section_social_icon";a:2:{s:16:"social_icon_list";i:1;s:5:"shape";i:1;}}s:5:"style";a:1:{s:20:"section_social_style";a:1:{s:9:"icon_size";i:1;}}}}s:7:"section";a:3:{s:5:"count";i:1;s:15:"control_percent";i:3;s:8:"controls";a:3:{s:6:"layout";a:1:{s:17:"section_structure";a:1:{s:9:"structure";i:1;}}s:5:"style";a:2:{s:18:"section_background";a:2:{s:21:"background_background";i:1;s:16:"background_color";i:1;}s:14:"section_border";a:3:{s:13:"border_border";i:1;s:12:"border_width";i:1;s:12:"border_color";i:1;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:3:{s:6:"margin";i:1;s:7:"padding";i:1;s:7:"z_index";i:1;}}}}}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
@@ -463,11 +471,11 @@
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_elementor_data]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[{"id":"12e0b7f","elType":"section","settings":{"structure":"30","background_background":"classic","background_color":"#ffffff","margin":{"unit":"px","top":"0","right":0,"bottom":"0","left":0,"isLinked":false},"padding":{"unit":"px","top":"10","right":"0","bottom":"10","left":"0","isLinked":false},"border_border":"solid","border_width":{"unit":"px","top":"0","right":"0","bottom":"02","left":"0","isLinked":false},"border_color":"rgba(121,196,41,0.63)"},"elements":[{"id":"e6179fc","elType":"column","settings":{"_column_size":33,"_inline_size":45.526,"content_position":"center","margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[{"id":"6a4f033","elType":"widget","settings":{"image":{"url":"https:\/\/www.inkthemesdemo.com\/demo1\/education-center\/wp-content\/uploads\/sites\/131\/2019\/10\/green.png","id":2569},"align":"left"},"elements":[],"widgetType":"image"}],"isInner":false},{"id":"d83030a","elType":"column","settings":{"_column_size":33,"_inline_size":42.193,"content_position":"center"},"elements":[{"id":"e4d530a","elType":"widget","settings":{"navbar":"main-menu","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"menu_typography_normal_typography":"custom","menu_typography_normal_font_family":"Montserrat","menu_typography_normal_font_size":{"unit":"px","size":13,"sizes":[]},"menu_typography_normal_font_weight":"400","menu_link_color":"#4054b2"},"elements":[],"widgetType":"ink-wp-menu-bar"}],"isInner":false},{"id":"f8265b8","elType":"column","settings":{"_column_size":33,"_inline_size":12.277},"elements":[{"id":"e326166","elType":"widget","settings":{"social_icon_list":[{"social_icon":{"value":"fab fa-facebook","library":"fa-brands"},"_id":"783eafc","link":{"url":"","is_external":"true","nofollow":""},"item_icon_color":"default","item_icon_primary_color":"","item_icon_secondary_color":""},{"social_icon":{"value":"fab fa-twitter","library":"fa-brands"},"_id":"3e1fc34","link":{"url":"","is_external":"true","nofollow":""},"item_icon_color":"default","item_icon_primary_color":"","item_icon_secondary_color":""},{"social_icon":{"value":"fab fa-google-plus","library":"fa-brands"},"_id":"d7b08d2","link":{"url":"","is_external":"true","nofollow":""},"item_icon_color":"default","item_icon_primary_color":"","item_icon_secondary_color":""}],"shape":"circle","icon_size":{"unit":"px","size":8,"sizes":[]}},"elements":[],"widgetType":"social-icons"}],"isInner":false}],"isInner":false}]]]></wp:meta_value>
+		<wp:meta_value><![CDATA[[{"id":"12e0b7f","elType":"section","settings":{"structure":"30","background_background":"classic","background_color":"#ffffff","margin":{"unit":"px","top":"0","right":0,"bottom":"0","left":0,"isLinked":false},"padding":{"unit":"px","top":"10","right":"0","bottom":"10","left":"0","isLinked":false},"border_border":"solid","border_width":{"unit":"px","top":"0","right":"0","bottom":"02","left":"0","isLinked":false},"border_color":"rgba(121,196,41,0.63)","z_index":999},"elements":[{"id":"e6179fc","elType":"column","settings":{"_column_size":33,"_inline_size":45.526,"content_position":"center","margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[{"id":"6a4f033","elType":"widget","settings":{"image":{"url":"https:\/\/www.inkthemesdemo.com\/demo1\/education-center\/wp-content\/uploads\/sites\/131\/2019\/10\/green.png","id":2569},"align":"left"},"elements":[],"widgetType":"image"}],"isInner":false},{"id":"d83030a","elType":"column","settings":{"_column_size":33,"_inline_size":42.193,"content_position":"center"},"elements":[{"id":"e4d530a","elType":"widget","settings":{"navbar":"main-menu","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"menu_typography_normal_typography":"custom","menu_typography_normal_font_family":"Montserrat","menu_typography_normal_font_size":{"unit":"px","size":13,"sizes":[]},"menu_typography_normal_font_weight":"400","menu_link_color":"#4054b2"},"elements":[],"widgetType":"ink-wp-menu-bar"}],"isInner":false},{"id":"f8265b8","elType":"column","settings":{"_column_size":33,"_inline_size":12.277},"elements":[{"id":"e326166","elType":"widget","settings":{"social_icon_list":[{"social_icon":{"value":"fab fa-facebook","library":"fa-brands"},"_id":"783eafc","link":{"url":"","is_external":"true","nofollow":""},"item_icon_color":"default","item_icon_primary_color":"","item_icon_secondary_color":""},{"social_icon":{"value":"fab fa-twitter","library":"fa-brands"},"_id":"3e1fc34","link":{"url":"","is_external":"true","nofollow":""},"item_icon_color":"default","item_icon_primary_color":"","item_icon_secondary_color":""},{"social_icon":{"value":"fab fa-google-plus","library":"fa-brands"},"_id":"d7b08d2","link":{"url":"","is_external":"true","nofollow":""},"item_icon_color":"default","item_icon_primary_color":"","item_icon_secondary_color":""}],"shape":"circle","icon_size":{"unit":"px","size":8,"sizes":[]}},"elements":[],"widgetType":"social-icons"}],"isInner":false}],"isInner":false}]]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_elementor_controls_usage]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:5:{s:5:"image";a:3:{s:5:"count";i:1;s:15:"control_percent";i:1;s:8:"controls";a:1:{s:7:"content";a:1:{s:13:"section_image";a:2:{s:5:"image";i:1;s:5:"align";i:1;}}}}s:6:"column";a:3:{s:5:"count";i:3;s:15:"control_percent";i:0;s:8:"controls";a:2:{s:6:"layout";a:1:{s:6:"layout";a:2:{s:12:"_inline_size";i:3;s:16:"content_position";i:2;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:2:{s:6:"margin";i:1;s:7:"padding";i:1;}}}}s:15:"ink-wp-menu-bar";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:3:{s:7:"content";a:1:{s:22:"section_navbar_content";a:1:{s:6:"navbar";i:1;}}s:8:"advanced";a:1:{s:14:"_section_style";a:2:{s:7:"_margin";i:1;s:8:"_padding";i:1;}}s:5:"style";a:1:{s:18:"section_menu_style";a:5:{s:33:"menu_typography_normal_typography";i:1;s:34:"menu_typography_normal_font_family";i:1;s:32:"menu_typography_normal_font_size";i:1;s:34:"menu_typography_normal_font_weight";i:1;s:15:"menu_link_color";i:1;}}}}s:12:"social-icons";a:3:{s:5:"count";i:1;s:15:"control_percent";i:1;s:8:"controls";a:2:{s:7:"content";a:1:{s:19:"section_social_icon";a:2:{s:16:"social_icon_list";i:1;s:5:"shape";i:1;}}s:5:"style";a:1:{s:20:"section_social_style";a:1:{s:9:"icon_size";i:1;}}}}s:7:"section";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:3:{s:6:"layout";a:1:{s:17:"section_structure";a:1:{s:9:"structure";i:1;}}s:5:"style";a:2:{s:18:"section_background";a:2:{s:21:"background_background";i:1;s:16:"background_color";i:1;}s:14:"section_border";a:3:{s:13:"border_border";i:1;s:12:"border_width";i:1;s:12:"border_color";i:1;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:2:{s:6:"margin";i:1;s:7:"padding";i:1;}}}}}]]></wp:meta_value>
+		<wp:meta_value><![CDATA[a:5:{s:5:"image";a:3:{s:5:"count";i:1;s:15:"control_percent";i:1;s:8:"controls";a:1:{s:7:"content";a:1:{s:13:"section_image";a:2:{s:5:"image";i:1;s:5:"align";i:1;}}}}s:6:"column";a:3:{s:5:"count";i:3;s:15:"control_percent";i:0;s:8:"controls";a:2:{s:6:"layout";a:1:{s:6:"layout";a:2:{s:12:"_inline_size";i:3;s:16:"content_position";i:2;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:2:{s:6:"margin";i:1;s:7:"padding";i:1;}}}}s:15:"ink-wp-menu-bar";a:3:{s:5:"count";i:1;s:15:"control_percent";i:2;s:8:"controls";a:3:{s:7:"content";a:1:{s:22:"section_navbar_content";a:1:{s:6:"navbar";i:1;}}s:8:"advanced";a:1:{s:14:"_section_style";a:2:{s:7:"_margin";i:1;s:8:"_padding";i:1;}}s:5:"style";a:1:{s:18:"section_menu_style";a:5:{s:33:"menu_typography_normal_typography";i:1;s:34:"menu_typography_normal_font_family";i:1;s:32:"menu_typography_normal_font_size";i:1;s:34:"menu_typography_normal_font_weight";i:1;s:15:"menu_link_color";i:1;}}}}s:12:"social-icons";a:3:{s:5:"count";i:1;s:15:"control_percent";i:1;s:8:"controls";a:2:{s:7:"content";a:1:{s:19:"section_social_icon";a:2:{s:16:"social_icon_list";i:1;s:5:"shape";i:1;}}s:5:"style";a:1:{s:20:"section_social_style";a:1:{s:9:"icon_size";i:1;}}}}s:7:"section";a:3:{s:5:"count";i:1;s:15:"control_percent";i:3;s:8:"controls";a:3:{s:6:"layout";a:1:{s:17:"section_structure";a:1:{s:9:"structure";i:1;}}s:5:"style";a:2:{s:18:"section_background";a:2:{s:21:"background_background";i:1;s:16:"background_color";i:1;}s:14:"section_border";a:3:{s:13:"border_border";i:1;s:12:"border_width";i:1;s:12:"border_color";i:1;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:3:{s:6:"margin";i:1;s:7:"padding";i:1;s:7:"z_index";i:1;}}}}}]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 				</channel>

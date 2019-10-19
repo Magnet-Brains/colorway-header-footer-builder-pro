@@ -61,8 +61,6 @@ if (!class_exists('colorwayhf_admin_styles')) {
 
         public function init_actions() {
             if (apply_filters($this->theme_name . '_enable_setup_wizard', true) && current_user_can('manage_options')) {
-                // add_action('after_switch_theme', array($this, 'switch_theme'));
-                add_action('wp_ajax_setup_content', [$this, 'setup_content']);
                 add_action('admin_menu', array($this, 'admin_menus'));
                 add_action('admin_init', array($this, 'init_wizard_steps'), 30);
                 add_action('admin_init', array($this, 'setup_wizard'), 30);
@@ -212,10 +210,10 @@ if (!class_exists('colorwayhf_admin_styles')) {
                     // avoid theme check issues.
                     echo '<title>' . esc_html__('Colorway &rsaquo; ColorwayHf Setup Wizard', 'colorway-hf') . '</title>';
                     ?>
-            <?php wp_print_scripts('colorway-hf-setup'); ?>
-            <?php do_action('admin_print_styles'); ?>
-            <?php do_action('admin_print_scripts'); ?>
-            <?php do_action('admin_head'); ?>
+                    <?php wp_print_scripts('colorway-hf-setup'); ?>
+                    <?php do_action('admin_print_styles'); ?>
+                    <?php do_action('admin_print_scripts'); ?>
+                    <?php do_action('admin_head'); ?>
                 </head>
                 <body class="colorway-hf-setup wp-core-ui">
                     <h1 id="wc-logo">
@@ -230,15 +228,15 @@ if (!class_exists('colorwayhf_admin_styles')) {
 
                 public function setup_wizard_footer() {
                     ?>
-                <?php if ('next_steps' === $this->step) : ?>
+                    <?php if ('next_steps' === $this->step) : ?>
                         <a class="wc-return-to-dashboard"
                            href="<?php echo esc_url(admin_url()); ?>"><?php esc_html_e('Return to the WordPress Dashboard', 'colorway-hf'); ?></a>
-            <?php endif; ?>
+                       <?php endif; ?>
                 </body>
-            <?php
-            @do_action('admin_footer'); // this was spitting out some errors in some admin templates. quick @ fix until I have time to find out what's causing errors.
-            do_action('admin_print_footer_scripts');
-            ?>
+                <?php
+                @do_action('admin_footer'); // this was spitting out some errors in some admin templates. quick @ fix until I have time to find out what's causing errors.
+                do_action('admin_print_footer_scripts');
+                ?>
             </html>
             <?php
         }
@@ -252,23 +250,23 @@ if (!class_exists('colorwayhf_admin_styles')) {
             <ol class="colorway-hf-setup-steps">
                 <?php foreach ($ouput_steps as $step_key => $step) : ?>
                     <li class="<?php
-                            $show_link = false;
-                            if ($step_key === $this->step) {
-                                echo 'active';
-                            } elseif (array_search($this->step, array_keys($this->steps)) > array_search($step_key, array_keys($this->steps))) {
-                                echo 'done';
-                                $show_link = true;
-                            }
-                            ?>"><?php
-                    if ($show_link) {
-                        ?>
+                    $show_link = false;
+                    if ($step_key === $this->step) {
+                        echo 'active';
+                    } elseif (array_search($this->step, array_keys($this->steps)) > array_search($step_key, array_keys($this->steps))) {
+                        echo 'done';
+                        $show_link = true;
+                    }
+                    ?>"><?php
+                            if ($show_link) {
+                                ?>
                             <a href="<?php echo esc_url($this->get_step_link($step_key)); ?>"><?php echo esc_html($step['name']); ?></a>
-                    <?php
-                } else {
-                    echo esc_html($step['name']);
-                }
-                ?></li>
-            <?php endforeach; ?>
+                            <?php
+                        } else {
+                            echo esc_html($step['name']);
+                        }
+                        ?></li>
+                <?php endforeach; ?>
             </ol>
             <?php
         }
@@ -341,11 +339,11 @@ if (!class_exists('colorwayhf_admin_styles')) {
             <form method="post">
                 <?php if ($this->is_possible_upgrade()) { ?>
                     <p><?php esc_html_e('It looks like you already have content installed on this website. If you would like to install the default demo content as well you can select it below. Otherwise just choose the upgrade option to ensure everything is up to date.', 'colorway-hf'); ?></p>
-            <?php } else { ?>
+                <?php } else { ?>
                     <p><?php printf(esc_html__("The next step is to import demo header & footer templates for your site.", 'colorway-hf')); ?></p>
                     <p><?php printf(esc_html__('Click the “Import Templates” button. Once the templates are imported, you can manage/edit them through the WordPress admin dashboard.', 'colorway-hf')); ?></p>
                     <p><?php printf(esc_html__("Or, you can skip this step to create headers & footers from scratch. New templates will be created under the “My Templates” section of the Colorway Header-Footer addons.", 'colorway-hf')); ?></p>
-            <?php } ?>
+                <?php } ?>
 
                 <div class="content-importer-response">
                     <div id="importer-response" class="clear pos-relative">
@@ -375,7 +373,7 @@ if (!class_exists('colorwayhf_admin_styles')) {
                                                                             <a href="<?php echo esc_url($this->get_next_step_link()); ?>"
                                                                                class="button button-large button-next button-next-skip"><?php esc_html_e('Skip This Step', 'colorway-hf'); ?></a>
                                                                             <a href="#" class="colorway-import-content button button-large"><?php esc_html_e('Import Templates', 'colorway-hf'); ?></a>
-                                                                    <?php wp_nonce_field('colorway-hf-setup'); ?>
+                                                                            <?php wp_nonce_field('colorway-hf-setup'); ?>
                                                                         </div>
                                                                     </div>
                                                                     </form>
@@ -490,11 +488,12 @@ if (!class_exists('colorwayhf_admin_styles')) {
 
                                                                     <h1><?php esc_html_e('Your Website Is Ready With New Header & Footer!', 'colorway-hf'); ?></h1>
 
-                                                                    <p class="lp-redirect-page-pragrahi"><?php esc_html_e('You are being redirected to the Welcome Page of Colorway Header-Footer addon…', 'colorway-hf'); ?> <img src="<?php echo $this->plugin_url . 'images/ajax-load.gif' ?>" width="" height="" alt="" />
+                                                                    <p class="lp-redirect-page-pragrahi"><?php esc_html_e('Go to my templates for viewing variety of predefined header footer templates or visit site
+…', 'colorway-hf'); ?>
                                                                     </p>
                                                                     <div class="colorway-hf-setup-actions step">
                                                                         <div class="buttons-ink">
-                                                                            <a href="<?php echo esc_url(home_url()); ?>" class="button button-next button-large" target="_blank">Visit Site</a> 
+                                                                            <a href="<?php echo esc_url(home_url()); ?>" class="button button-next button-large">Visit Site</a> 
                                                                             <a href="<?php echo esc_url($welcomePargeURL); ?>" class="colorway-temp button button-large">Go To My Templates!</a>
                                                                         </div>
                                                                     </div>
@@ -545,5 +544,11 @@ if (!class_exists('colorwayhf_admin_styles')) {
                                                             function colorway_hf_theme_setup_wizard() {
                                                                 Colorway_Hf_Setup_Wizard::get_instance();
                                                             }
+
+
+
+
+
+
 
 endif;
